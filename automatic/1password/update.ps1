@@ -43,13 +43,13 @@ param (
 
   $releases_opw4 = 'https://app-updates.agilebits.com/download/OPW4'
   $kind_opw4     = '1password4'
-  $releases_opw  = 'https://app-updates.agilebits.com/download/OPW7/Y'
+  $releases_opw  = 'https://app-updates.agilebits.com/download/OPW7'
   $kind_opw      = '1password'
 
 function global:au_GetLatest {
   $streams = [ordered] @{
     OPW4 = Get-LatestOPW -url $releases_opw4 -kind $kind_opw4
-    #OPW  = Get-LatestOPW -url $releases_opw -kind $kind_opw
+    OPW  = Get-LatestOPW -url $releases_opw -kind $kind_opw
   }
 
   return @{ Streams = $streams }
