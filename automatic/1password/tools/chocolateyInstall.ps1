@@ -7,7 +7,7 @@ $packageArgs = @{
   softwareName   = '1Password*'
   checksum       = '5593e982af53243c4575e71bc804506bd58cd05980f6e8a5dce3799c57df22ae'
   checksumType   = 'sha256'
-  # silentArgs     = '--log_path .'
+  silentArgs     = '--silent'
   validExitCodes = @(0)
 }
 
